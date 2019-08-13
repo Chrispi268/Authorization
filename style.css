@@ -1,0 +1,63 @@
+html, body, .site {
+  height: 100%;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.site {
+  display: table;
+  width: 100%;
+}
+.content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+body {
+  background-image: url(camp-4363073_1280.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.fancy-btn{
+  display:inline-block;
+  position:relative;
+  padding:10px 20px;
+  border:2px solid #fda;
+  color:#fda;
+  font-family:'Dancing Script',serif;
+  font-style:italic;
+  font-size:30px;
+  text-decoration:none;
+  margin:20px auto;
+  transition: color 0.4s
+}
+.fancy-btn:after{
+  content:" ";
+  border:2px solid rgba(0,0,0,0);
+  display:inline-block;
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  margin:auto;
+  transition:all 0.4s;
+}
+.fancy-btn:hover{
+  color:#eee
+}
+.fancy-btn:hover:after{  
+  border:2px solid #fda;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px); 
+}
+@media only screen and (max-width: 767px) {
+  body {
+    background-image: url(camp-4363073_1280.png);
+  }
+}
